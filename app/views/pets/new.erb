@@ -5,14 +5,14 @@
 
   <br>
 
-  <input type="text" name="pet[name]">
+  <input type="text" name="pet_name">
 
   <br>
 
   <h4>Choose an existing owner:</h4>
 
   <%@owners.each do |owner|%>
-    <input type="checkbox" name="pet[owner_id]" value="<%=owner.id%>" id="<%=owner.id%>"><%=owner.name%></input>
+    <input type="checkbox" name="owner_name" value="<%=owner.id%>" id="<%=owner.id%>"><%=owner.name%></input>
   <%end%>
 
   <br>
